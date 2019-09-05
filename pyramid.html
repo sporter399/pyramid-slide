@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onload="drawPyramid(rangeElem.value)">
+    <div id="header">
+        <h1>Pyramid Slide</h1>
+    </div>
+    <div id="container">
+        <div id="container-header">
+            Brick symbol: 
+            <select id="brick-char">
+                <option value="#">#</option>
+                <option value="@">@</option>
+                <option value="X">X</option>
+                <option value="$">$</option>
+            </select>
+            How high? <input type="range" id="range" min="1" max="36" step="1" value="18"/> <p id="scroll-value"></p>
+        </div>
+        <div id="pyramid"></div>
+    </div>
+    <script src="pyramid.js"></script>
+    <link rel="stylesheet" href="pyramid.css">
+</body>
+</html>

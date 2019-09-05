@@ -1,0 +1,46 @@
+body {
+    margin: 0 15%;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    
+}
+
+#container {
+    margin: 40px 80px 40px 0px;
+    border: 2px solid rgba(153, 85, 170, 0.822);
+    border-radius: 3px;
+    
+    
+}
+
+#container-header {
+    font-size: 17px;
+    padding: 35px 0px 35px 40px;
+    background-color: rgba(180, 180, 180);
+}
+
+
+
+#header {
+    margin: 0px 80px 5px 0px;
+    background-color: rgba(170, 85, 136, 0.459);
+    padding: 25px 0px;
+    
+}
+
+#scroll-value {
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+#pyramid {
+    padding: 50px 0px 50px 0px;
+    line-height: 0;
+    font-size: 30px;
+    color: rgb(180, 50, 100);
+}
+
+
