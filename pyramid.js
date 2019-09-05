@@ -2,9 +2,7 @@ const brickChar = document.getElementById("brick-char");
 const rangeElem = document.getElementById("range");
 const scrollValue = document.getElementById("scroll-value");
 
-
 scrollValue.innerHTML = rangeElem.value;
-
 
 brickChar.onchange = function(event) {
     let height = rangeElem.value;
@@ -15,8 +13,6 @@ rangeElem.oninput = function(event) {
     let height = rangeElem.value;
     drawPyramid(height);
 }
-
-
 
 /**
  * drawPyramid
@@ -30,19 +26,19 @@ function drawPyramid(height) {
     scrollValue.innerHTML = rangeElem.value;
 
     // for each row....
-    for (var row = 0; row < height; row++) {
+    for (let row = 0; row < height; row++) {
 
         // figure out number of bricks and spaces
-        var numBricks = row + 2;
-        var numSpaces = height - row - 1;
+        let numBricks = row + 2;
+        let numSpaces = height - row - 1;
 
         // build up a string for this row
-        var rowStr = "";
-        for (var i = 0; i < numSpaces; i++) {
-            var spaceChar = "&nbsp"; // this is the HTML encoding for a space " "
+        let rowStr = "";
+        for (let i = 0; i < numSpaces; i++) {
+            let spaceChar = "&nbsp"; // this is the HTML encoding for a space " "
             rowStr += spaceChar;
         }
-        for (var i = 0; i < numBricks; i++) {
+        for (let i = 0; i < numBricks; i++) {
             rowStr += brickChar.value;
         }
 
